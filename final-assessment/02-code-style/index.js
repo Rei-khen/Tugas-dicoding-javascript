@@ -2,7 +2,7 @@ const books = {};
 
 function getBooks() {
   return books;
-}
+};
 
 function getBookById(id) {
   const book = books[id];
@@ -12,11 +12,11 @@ function getBookById(id) {
   };
 
   return book.id;
-}
+};
 
 function saveBook(book) {
   books[book.id] = book;
-}
+};
 
 saveBook({ id: "book-1", name: "Book 1" });
 const myBooks = getBooks();
