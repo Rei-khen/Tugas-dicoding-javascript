@@ -10,7 +10,9 @@ addOrder('Bob', [
   { name: 'Kopi', price: 10000 }
 ]);
 
-console.log(orders);
+console.log("output dari fungsi addOrder : ")
+// console.log(orders);
+console.dir(orders, { depth: null, colors: true });
 
 /**
  * Output yang diharapkan:
@@ -41,7 +43,9 @@ console.log(orders);
 updateOrderStatus(orders[0].id, 'Diproses');
 updateOrderStatus(orders[1].id, 'Selesai');
 
-console.log(orders);
+console.log("output dari fungsi updateOrderStatus : ")
+// console.log(orders);
+console.dir(orders, { depth: null, colors: true });
 
 /**
  * Output yang diharapkan:
@@ -69,6 +73,7 @@ console.log(orders);
  * ]
  */
 
+console.log("output dari fungsi calculateTotalRevenue : ")
 console.log(calculateTotalRevenue());
 /**
  * Output yang diharapkan:
@@ -78,7 +83,9 @@ console.log(calculateTotalRevenue());
 
 deleteOrder(orders[0].id);
 
-console.log(orders);
+console.log("output dari fungsi deleteOrder : ")
+// console.log(orders);
+console.dir(orders, { depth: null, colors: true });
 
 /**
  * Output yang diharapkan:
